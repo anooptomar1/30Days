@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bCR-OV-ySQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day18 View Controller-->
+        <scene sceneID="lMk-Dj-dZF">
+            <objects>
+                <viewController id="bCR-OV-ySQ" customClass="Day18ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AG0-uA-sf2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="CLG-Yw-sXC">
+                                <rect key="frame" x="8" y="28" width="359" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-YT-JZF">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teu-21-CJ6">
+                                        <rect key="frame" x="329" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Go"/>
+                                        <connections>
+                                            <action selector="didTapGo:" destination="bCR-OV-ySQ" eventType="touchUpInside" id="YUB-0I-HrF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVV-h3-on6">
+                                <rect key="frame" x="8" y="66" width="359" height="601"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CLG-Yw-sXC" firstAttribute="leading" secondItem="kWL-0K-Zqm" secondAttribute="leading" constant="8" id="96q-gU-uWu"/>
+                            <constraint firstItem="fVV-h3-on6" firstAttribute="leading" secondItem="kWL-0K-Zqm" secondAttribute="leading" constant="8" id="IGj-KD-QcJ"/>
+                            <constraint firstItem="fVV-h3-on6" firstAttribute="top" secondItem="CLG-Yw-sXC" secondAttribute="bottom" constant="8" id="MCP-zW-d67"/>
+                            <constraint firstItem="fVV-h3-on6" firstAttribute="bottom" secondItem="kWL-0K-Zqm" secondAttribute="bottom" id="gUu-LC-dsA"/>
+                            <constraint firstItem="CLG-Yw-sXC" firstAttribute="top" secondItem="kWL-0K-Zqm" secondAttribute="top" constant="8" id="rum-mk-aW5"/>
+                            <constraint firstItem="kWL-0K-Zqm" firstAttribute="trailing" secondItem="CLG-Yw-sXC" secondAttribute="trailing" constant="8" id="uI7-Su-hdD"/>
+                            <constraint firstItem="kWL-0K-Zqm" firstAttribute="trailing" secondItem="fVV-h3-on6" secondAttribute="trailing" constant="8" id="vLA-tD-46g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kWL-0K-Zqm"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressbar" destination="Mfb-YT-JZF" id="F2e-bJ-TxF"/>
+                        <outlet property="webView" destination="fVV-h3-on6" id="A8g-Uz-c11"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU1-xO-ZUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+</document>

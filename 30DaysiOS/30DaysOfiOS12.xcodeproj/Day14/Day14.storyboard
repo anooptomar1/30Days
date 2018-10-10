@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51o-qh-McO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day14 View Controller-->
+        <scene sceneID="rTz-pN-saQ">
+            <objects>
+                <viewController id="51o-qh-McO" customClass="Day14ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eh2-VK-iRp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Accessories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H47-J0-QdM">
+                                <rect key="frame" x="102" y="40" width="171" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Dr-zS-4Z7">
+                                <rect key="frame" x="10" y="73.5" width="355" height="583.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wVu-70-fFK" firstAttribute="bottom" secondItem="2Dr-zS-4Z7" secondAttribute="bottom" constant="10" id="4EN-8u-iLl"/>
+                            <constraint firstItem="H47-J0-QdM" firstAttribute="top" secondItem="wVu-70-fFK" secondAttribute="top" constant="20" id="DGc-pg-XDx"/>
+                            <constraint firstItem="2Dr-zS-4Z7" firstAttribute="leading" secondItem="wVu-70-fFK" secondAttribute="leading" constant="10" id="Ssp-72-tNr"/>
+                            <constraint firstItem="wVu-70-fFK" firstAttribute="trailing" secondItem="2Dr-zS-4Z7" secondAttribute="trailing" constant="10" id="UUB-w1-IxB"/>
+                            <constraint firstItem="H47-J0-QdM" firstAttribute="centerX" secondItem="eh2-VK-iRp" secondAttribute="centerX" id="Xyc-Z6-cn5"/>
+                            <constraint firstItem="2Dr-zS-4Z7" firstAttribute="top" secondItem="H47-J0-QdM" secondAttribute="bottom" constant="10" id="oRg-qs-tn7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wVu-70-fFK"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="2Dr-zS-4Z7" id="lXn-OI-FCb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLC-Im-BFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="115"/>
+        </scene>
+    </scenes>
+</document>

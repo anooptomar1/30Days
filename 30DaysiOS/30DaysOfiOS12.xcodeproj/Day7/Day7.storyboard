@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xpo-IQ-ekT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day7 View Controller-->
+        <scene sceneID="zGU-8x-VNg">
+            <objects>
+                <viewController id="Xpo-IQ-ekT" customClass="Day7ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpd-ei-C09">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xcE-8d-Ykd">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AvZ-yj-YSJ" firstAttribute="bottom" secondItem="xcE-8d-Ykd" secondAttribute="bottom" constant="10" id="7HN-Nn-sjz"/>
+                            <constraint firstItem="AvZ-yj-YSJ" firstAttribute="trailing" secondItem="xcE-8d-Ykd" secondAttribute="trailing" constant="10" id="Dom-A8-qX4"/>
+                            <constraint firstItem="xcE-8d-Ykd" firstAttribute="leading" secondItem="AvZ-yj-YSJ" secondAttribute="leading" constant="10" id="Elu-Cu-jsr"/>
+                            <constraint firstItem="xcE-8d-Ykd" firstAttribute="top" secondItem="AvZ-yj-YSJ" secondAttribute="top" constant="10" id="Mqt-2k-WRZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AvZ-yj-YSJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="xcE-8d-Ykd" id="8Et-Uf-rUU"/>
+                        <segue destination="kWi-Mh-MsS" kind="show" identifier="day7Details" id="WXM-Dw-4uM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sj6-1l-1sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="142"/>
+        </scene>
+        <!--Day7 Detail View Controller-->
+        <scene sceneID="wAe-ey-lcv">
+            <objects>
+                <viewController id="kWi-Mh-MsS" customClass="Day7DetailViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zvS-Ga-S7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ySg-92-Bdu">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZeP-hT-N52" firstAttribute="trailing" secondItem="ySg-92-Bdu" secondAttribute="trailing" constant="10" id="C3U-5z-VsS"/>
+                            <constraint firstItem="ZeP-hT-N52" firstAttribute="bottom" secondItem="ySg-92-Bdu" secondAttribute="bottom" constant="10" id="CfX-Wh-X0A"/>
+                            <constraint firstItem="ySg-92-Bdu" firstAttribute="top" secondItem="ZeP-hT-N52" secondAttribute="top" constant="10" id="PcK-Fj-XU1"/>
+                            <constraint firstItem="ySg-92-Bdu" firstAttribute="leading" secondItem="ZeP-hT-N52" secondAttribute="leading" constant="10" id="ZSw-2A-4lJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZeP-hT-N52"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="ySg-92-Bdu" id="c2k-CA-hq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDM-Vs-g5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="818" y="142"/>
+        </scene>
+    </scenes>
+</document>

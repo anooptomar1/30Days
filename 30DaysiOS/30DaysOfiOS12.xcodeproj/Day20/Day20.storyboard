@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="83q-Eq-pQG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day20 View Controller-->
+        <scene sceneID="fBW-cB-Bik">
+            <objects>
+                <viewController id="83q-Eq-pQG" customClass="Day20ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4qx-T6-0H6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-Kl-ZF9">
+                                <rect key="frame" x="112.5" y="223.5" width="150" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="ER5-VF-mn5"/>
+                                    <constraint firstAttribute="width" constant="150" id="klC-hv-d5o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZTR-Kl-ZF9" firstAttribute="centerX" secondItem="4qx-T6-0H6" secondAttribute="centerX" id="5pu-l8-OPI"/>
+                            <constraint firstItem="ZTR-Kl-ZF9" firstAttribute="centerY" secondItem="4qx-T6-0H6" secondAttribute="centerY" id="RQ1-DB-UwF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QTO-JA-RwH"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="ZTR-Kl-ZF9" id="SJ0-n7-Tky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k52-oA-dux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="151"/>
+        </scene>
+    </scenes>
+</document>

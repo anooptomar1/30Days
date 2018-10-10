@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Nr-np-0QR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day22 View Controller-->
+        <scene sceneID="sVI-RF-Mt5">
+            <objects>
+                <viewController id="6Nr-np-0QR" customClass="Day22ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPt-O9-RT5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uaz-zM-xBE">
+                                <rect key="frame" x="114" y="318.5" width="147" height="30"/>
+                                <state key="normal" title="Schedule Notification"/>
+                                <connections>
+                                    <action selector="didTapNotification:" destination="6Nr-np-0QR" eventType="touchUpInside" id="6Fy-BF-HMI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uaz-zM-xBE" firstAttribute="centerY" secondItem="JPt-O9-RT5" secondAttribute="centerY" id="3Xk-ld-usw"/>
+                            <constraint firstItem="Uaz-zM-xBE" firstAttribute="centerX" secondItem="JPt-O9-RT5" secondAttribute="centerX" id="4Fz-kY-eKd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RPD-H3-fWe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1D-uP-ck8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="125"/>
+        </scene>
+    </scenes>
+</document>

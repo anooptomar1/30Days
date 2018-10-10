@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a1t-2S-2Uq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day3 View Controller-->
+        <scene sceneID="WE2-Ax-hfz">
+            <objects>
+                <viewController id="a1t-2S-2Uq" customClass="Day3ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZu-Yt-9Iu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha Slider" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puV-Rb-mSW">
+                                <rect key="frame" x="103.5" y="263" width="168" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zfe-jZ-8rs">
+                                <rect key="frame" x="28" y="314" width="319" height="31"/>
+                                <connections>
+                                    <action selector="didChangeSliderValue:" destination="a1t-2S-2Uq" eventType="valueChanged" id="964-pB-Lhw"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="weY-UU-I4x" firstAttribute="trailing" secondItem="zfe-jZ-8rs" secondAttribute="trailing" constant="30" id="0ih-6m-Cbc"/>
+                            <constraint firstItem="zfe-jZ-8rs" firstAttribute="top" secondItem="puV-Rb-mSW" secondAttribute="bottom" constant="10" id="Vxe-B4-8k4"/>
+                            <constraint firstItem="puV-Rb-mSW" firstAttribute="centerY" secondItem="nZu-Yt-9Iu" secondAttribute="centerY" constant="-50" id="anG-pb-dNl"/>
+                            <constraint firstItem="puV-Rb-mSW" firstAttribute="centerX" secondItem="nZu-Yt-9Iu" secondAttribute="centerX" id="cTo-Ig-Yla"/>
+                            <constraint firstItem="zfe-jZ-8rs" firstAttribute="leading" secondItem="weY-UU-I4x" secondAttribute="leading" constant="30" id="uJR-4B-yQw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="weY-UU-I4x"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="puV-Rb-mSW" id="dMP-fT-fqy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4e-1u-10f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="132"/>
+        </scene>
+    </scenes>
+</document>

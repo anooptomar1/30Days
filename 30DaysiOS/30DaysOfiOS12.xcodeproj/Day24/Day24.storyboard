@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zfZ-xw-e2Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day24 View Controller-->
+        <scene sceneID="5rn-6b-BO5">
+            <objects>
+                <viewController id="zfZ-xw-e2Y" customClass="Day24ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qyh-3i-xcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-WG-Lzf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pEA-WG-Lzf" firstAttribute="top" secondItem="Y1K-9B-lt1" secondAttribute="top" id="60B-Xc-KU8"/>
+                            <constraint firstItem="pEA-WG-Lzf" firstAttribute="leading" secondItem="Y1K-9B-lt1" secondAttribute="leading" id="I2G-a3-ISB"/>
+                            <constraint firstItem="Y1K-9B-lt1" firstAttribute="trailing" secondItem="pEA-WG-Lzf" secondAttribute="trailing" id="nvD-bE-rd7"/>
+                            <constraint firstItem="Y1K-9B-lt1" firstAttribute="bottom" secondItem="pEA-WG-Lzf" secondAttribute="bottom" id="zRi-HF-uui"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y1K-9B-lt1"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pEA-WG-Lzf" id="xiT-3e-0eR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwb-hg-96c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="109"/>
+        </scene>
+    </scenes>
+</document>

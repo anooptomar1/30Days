@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCZ-h0-gN7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day29 View Controller-->
+        <scene sceneID="BS5-66-RrR">
+            <objects>
+                <viewController id="kCZ-h0-gN7" customClass="Day29ViewController" customModule="_0DaysOfiOS12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ogS-no-6ht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xZL-KP-8C8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="CKD-Yk-7UP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph9-pU-n3d">
+                                <rect key="frame" x="120.5" y="180" width="134" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Detect Langugae"/>
+                                <connections>
+                                    <action selector="detectLang:" destination="kCZ-h0-gN7" eventType="touchUpInside" id="MzX-J5-fti"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-2I-xb2">
+                                <rect key="frame" x="166" y="226" width="43" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ph9-pU-n3d" firstAttribute="centerX" secondItem="ogS-no-6ht" secondAttribute="centerX" id="BoX-xA-uWo"/>
+                            <constraint firstItem="xZL-KP-8C8" firstAttribute="leading" secondItem="hf3-fW-1sR" secondAttribute="leading" id="G8n-un-7ah"/>
+                            <constraint firstItem="Rde-2I-xb2" firstAttribute="top" secondItem="Ph9-pU-n3d" secondAttribute="bottom" constant="10" id="cuz-44-5XP"/>
+                            <constraint firstItem="Ph9-pU-n3d" firstAttribute="top" secondItem="xZL-KP-8C8" secondAttribute="bottom" constant="10" id="eNh-MT-skz"/>
+                            <constraint firstItem="xZL-KP-8C8" firstAttribute="top" secondItem="hf3-fW-1sR" secondAttribute="top" id="hhi-U0-6J3"/>
+                            <constraint firstItem="Rde-2I-xb2" firstAttribute="centerX" secondItem="ogS-no-6ht" secondAttribute="centerX" id="tMa-8c-dFw"/>
+                            <constraint firstItem="hf3-fW-1sR" firstAttribute="trailing" secondItem="xZL-KP-8C8" secondAttribute="trailing" id="tf1-et-996"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hf3-fW-1sR"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Rde-2I-xb2" id="RnG-yG-FLA"/>
+                        <outlet property="textView" destination="xZL-KP-8C8" id="VHe-Rf-f8l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozu-fU-MeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-188"/>
+        </scene>
+    </scenes>
+</document>
